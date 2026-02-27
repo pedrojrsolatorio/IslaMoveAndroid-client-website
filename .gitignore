@@ -1,0 +1,25 @@
+# Ignore Wordpress core
+wp_data/wp-admin/
+wp_data/wp-includes/
+wp_data/*.php
+
+# Ignore Docker database volumes
+wp_data/wp-content/advanced-cache.php
+wp_data/wp-content/object-cache.php
+wp_data/wp-content/cache/
+wp_data/wp-content/uploads/
+
+# Ignore WordPress core themes/plugins
+wp_data/wp-content/plugins/*
+!wp_data/wp-content/plugins/my-plugin/
+
+wp_data/wp-content/themes/*
+!wp_data/wp-content/themes/my-theme/
+
+# Ignore MySQL Docker volume data
+db_data/
+
+# Optional: Ignore OS / IDE files
+.DS_Store
+.vscode/
+Thumbs.db
