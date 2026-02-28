@@ -23,3 +23,11 @@ db_data/
 .DS_Store
 .vscode/
 Thumbs.db
+
+# Node
+**/node_modules/
+**/dist/
+npm-debug.log
+
+# Env
+.env
