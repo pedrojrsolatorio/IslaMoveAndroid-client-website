@@ -1,6 +1,9 @@
 <?php
-define('THEME_DIR_URI', get_template_directory_uri());
-define('THEME_DIR', get_template_directory());
+define('MY_THEME_DIR_URI', get_template_directory_uri());
+define('MY_THEME_DIR', get_template_directory());
+
+// Include composer autoloader
+require_once MY_THEME_DIR . '/vendor/autoload.php';
 
 class IslaMove_Theme
 {
@@ -8,6 +11,7 @@ class IslaMove_Theme
 
     private function __construct()
     {
+        include MY_THEME_DIR . '/includes/categories.php';
         add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
     }
 
@@ -22,7 +26,7 @@ class IslaMove_Theme
     public function enqueue_scripts()
     {
         wp_enqueue_style('theme-style', get_stylesheet());
-        wp_enqueue_style('tailwind', THEME_DIR_URI . '/assets/tailwind.css');
+        wp_enqueue_style('tailwind', MY_THEME_DIR_URI . '/assets/tailwind.css');
     }
 }
 
