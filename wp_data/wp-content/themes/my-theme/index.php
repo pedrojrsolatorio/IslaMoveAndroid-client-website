@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-<!-- <?php echo 'Hello world'; ?> -->
-
-<div class="bg-orange-500 p-5">
-    <!-- This is some other content -->
-    <?php the_title() ?>
-</div>
+<main class="py-20 text-center">
+    <h1 class="text-3xl font-bold">Welcome to IslaMove</h1>
+    <p class="mt-4">This page uses the default template.</p>
+</main>
 
 <?php get_footer(); ?>

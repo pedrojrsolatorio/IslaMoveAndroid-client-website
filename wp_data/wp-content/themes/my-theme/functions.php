@@ -12,6 +12,8 @@ class IslaMove_Theme
     private function __construct()
     {
         include MY_THEME_DIR . '/includes/categories.php';
+        include MY_THEME_DIR . '/includes/posts.php';
+
         add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
     }
 
