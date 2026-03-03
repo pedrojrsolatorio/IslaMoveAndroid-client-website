@@ -38,7 +38,7 @@ require_once MY_THEME_DIR . '/vendor/autoload.php';
 require_once MY_THEME_DIR . '/includes/CategoryHooks.php';
 require_once MY_THEME_DIR . '/includes/PostHooks.php';
 
-new CatgoryHooks();
+new CategoryHooks();
 new PostHooks();
 
 // Instantiate PSR-4 utility classes (from src/)
