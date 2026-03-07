@@ -6,7 +6,7 @@ $feat_description_2 = get_field('feature_description_2');
 ?>
 
 <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="container text-center">
         <h3 class="text-3xl font-bold mb-12"><?php echo esc_html($feat_title_1) ?></h3>
 
         <div class="grid md:grid-cols-2 gap-8">

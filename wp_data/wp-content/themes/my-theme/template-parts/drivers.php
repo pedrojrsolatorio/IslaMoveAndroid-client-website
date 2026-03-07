@@ -1,5 +1,5 @@
 <section class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="container">
         <h3 class="text-3xl font-bold text-center mb-12">For Drivers</h3>
 
         <div class="grid md:grid-cols-3 gap-8 text-center">

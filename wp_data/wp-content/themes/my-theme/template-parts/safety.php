@@ -1,5 +1,5 @@
 <section class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="container text-center">
         <h3 class="text-3xl font-bold mb-8">Safety & Verification</h3>
         <p class="max-w-3xl mx-auto text-lg">
             All drivers are verified before they can go online.

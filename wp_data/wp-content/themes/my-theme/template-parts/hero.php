@@ -6,7 +6,7 @@ $hero_button_link = get_field('hero_button_link');
 ?>
 
 <section class="bg-linear-to-r from-primary to-secondary text-white py-24">
-    <div class="max-w-7xl mx-auto px-6 text-center">
+    <div class="container text-center">
         <h2 class="text-5xl font-bold mb-6">
             <?php echo esc_html($hero_title); ?>
         </h2>
