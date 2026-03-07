@@ -55,3 +55,62 @@ new Posts();
 
 // PSR-4 utility class for templates does not need instantiation if using static methods
 // Example: Categories::current_category() can be called in templates
+
+// Theme Supports
+function my_theme_support()
+{
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_theme_support('menus');
+
+    // WordPress built-in logo support
+    add_theme_support('custom-logo', [
+        'height' => 100, //only suggestions, not display size
+        'width' => 300,
+        'flex-height' => true,
+        'flex-width' => true
+    ]);
+}
+add_action('after_setup_theme', 'my_theme_support');
+
+// Register Navigation Menus
+function my_theme_register_menus()
+{
+    register_nav_menus([
+        'main_menu' => 'Main Navigation',
+    ]);
+}
+add_action('after_setup_theme', 'my_theme_register_menus');
+
+// Customizer Settings
+function my_theme_customize_register($wp_customize)
+{
+    // Section
+    $wp_customize->add_section('theme_settings', [
+        'title' => 'Theme Settings',
+        'priority' => 30
+    ]);
+
+    // Site Name
+    $wp_customize->add_setting('site_name', [
+        'sanitize_callback' => 'sanitize_text_field'
+    ]);
+
+    $wp_customize->add_control('site_name', [
+        'label' => 'Site Name',
+        'section' => 'theme_settings',
+        'type' => 'text'
+    ]);
+
+    // Download Link
+    $wp_customize->add_setting('download_link', [
+        'sanitize_callback' => 'esc_url_raw'
+    ]);
+
+    $wp_customize->add_control('download_link', [
+        'label' => 'Download Link',
+        'section' => 'theme_settings',
+        'type' => 'url'
+    ]);
+}
+add_action('customize_register', 'my_theme_customize_register');
