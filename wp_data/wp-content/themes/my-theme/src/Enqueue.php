@@ -18,7 +18,9 @@ class Enqueue
 
         wp_enqueue_style(
             'tailwind',
-            MY_THEME_DIR_URI . '/assets/tailwind.css'
+            MY_THEME_DIR_URI . '/assets/tailwind.css',
+            [],
+            '1.0'
         );
     }
 }

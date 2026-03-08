@@ -114,3 +114,19 @@ function my_theme_customize_register($wp_customize)
     ]);
 }
 add_action('customize_register', 'my_theme_customize_register');
+
+// Optional: Preload self-hosted Inter fonts for faster rendering
+function theme_preload_fonts()
+{
+    $fonts = [
+        'Inter-Regular.woff2',
+        'Inter-Medium.woff2',
+        'Inter-SemiBold.woff2',
+        'Inter-Bold.woff2'
+    ];
+
+    foreach ($fonts as $font) {
+        echo '<link rel="preload" href="' . MY_THEME_DIR_URI . '/assets/fonts/' . $font . '" as="font" type="font/woff2" crossorigin>';
+    }
+}
+add_action('wp_head', 'theme_preload_fonts');
