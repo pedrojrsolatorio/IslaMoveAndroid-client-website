@@ -93,10 +93,10 @@ add_action('customize_register', 'my_theme_customize_register');
 function theme_preload_fonts()
 {
     $fonts = [
-        'Inter-Regular.woff2',
-        'Inter-Medium.woff2',
-        'Inter-SemiBold.woff2',
-        'Inter-Bold.woff2'
+        'inter-v20-latin-regular.woff2',
+        'inter-v20-latin-500.woff2',
+        'inter-v20-latin-600.woff2',
+        'inter-v20-latin-700.woff2',
     ];
 
     foreach ($fonts as $font) {

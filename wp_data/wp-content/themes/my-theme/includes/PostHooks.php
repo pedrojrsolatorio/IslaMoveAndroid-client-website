@@ -33,27 +33,27 @@
 
 class PostHooks
 {
-    public function __construct()
-    {
-        add_filter('the_title', [$this, 'change_title']);
-        add_filter('the_content', [$this, 'change_content']);
-    }
+    // public function __construct()
+    // {
+    //     // add_filter('the_title', [$this, 'change_title']);
+    //     // add_filter('the_content', [$this, 'change_content']);
+    // }
 
-    public function change_title($post_title)
-    {
-        if (is_admin()) {
-            return $post_title;
-        }
+    // public function change_title($post_title)
+    // {
+    //     if (is_admin()) {
+    //         return $post_title;
+    //     }
 
-        return strtoupper($post_title) . '!!!';
-    }
+    //     return strtoupper($post_title) . '!!!';
+    // }
 
-    public function change_content($post_content)
-    {
-        if (is_admin()) {
-            return $post_content;
-        }
+    // public function change_content($post_content)
+    // {
+    //     if (is_admin()) {
+    //         return $post_content;
+    //     }
 
-        return $post_content . '<p><strong>Read more!</strong></p>';
-    }
+    //     return $post_content . '<p><strong>Read more!</strong></p>';
+    // }
 }

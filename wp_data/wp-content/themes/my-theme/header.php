@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('bg-gray-50 text-gray-800'); ?>>
+<body <?php body_class('font-sans bg-gray-50 text-gray-800'); ?>>
 
     <?php
     $site_name = get_theme_mod('site_name');
@@ -23,7 +23,7 @@
                     <?php the_custom_logo(); ?>
                 <?php endif; ?>
 
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-2xl font-bold text-primary">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-xl font-extrabold">
                     <?php echo esc_html($site_name ? $site_name : get_bloginfo('name')); ?>
                 </a>
             </div>
@@ -34,14 +34,14 @@
                 wp_nav_menu([
                     'theme_location' => 'main_menu',
                     'container' => false,
-                    'menu_class' => 'flex gap-6'
+                    'menu_class' => 'flex gap-6 text-sm'
                 ])
                 ?>
             </nav>
 
             <!-- Download Button -->
             <?php if ($download_link) : ?>
-                <a href="<?php echo esc_url($download_link); ?>" class="bg-primary text-white px-4 py-2 rounded-lg">Download App</a>
+                <a href="<?php echo esc_url($download_link); ?>" class="btn-download">Download App</a>
             <?php endif; ?>
         </div>
     </header>

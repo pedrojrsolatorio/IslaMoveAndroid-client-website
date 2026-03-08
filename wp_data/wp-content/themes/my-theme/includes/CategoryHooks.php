@@ -27,17 +27,17 @@
 
 class CategoryHooks
 {
-    public function __construct()
-    {
-        add_action('init', [$this, 'test']);
-    }
+    // public function __construct()
+    // {
+    //     add_action('init', [$this, 'test']);
+    // }
 
-    public function test()
-    {
-        if (is_category()) {
-            add_action('wp_footer', function () {
-                echo '<p style="text-align:center;">THIS IS A TEST</p>';
-            });
-        }
-    }
+    // public function test()
+    // {
+    //     if (is_category()) {
+    //         add_action('wp_footer', function () {
+    //             echo '<p style="text-align:center;">THIS IS A TEST</p>';
+    //         });
+    //     }
+    // }
 }

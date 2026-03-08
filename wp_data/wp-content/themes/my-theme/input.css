@@ -4,7 +4,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-500 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/inter-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/inter-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-600 - latin */
 @font-face {
@@ -20,7 +20,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* inter-700 - latin */
 @font-face {
@@ -28,14 +28,15 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/inter-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-primary: #2563eb;
+  /* --color-primary: #2563eb; */
+  --color-primary: #19baf0;
   --color-secondary: #9333ea;
 }
 
@@ -45,5 +46,36 @@
   }
   .custom-logo {
     @apply h-10 w-auto;
+  }
+  .btn-download {
+    @apply px-5 py-3 text-sm font-medium rounded-2xl transition duration-200 hover:-translate-y-1;
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 14px rgb(25 186 240 / 0.4);
+  }
+  .btn-download:hover {
+    background-color: #1496c1;
+    box-shadow: 0 8px 20px rgb(25 186 240 / 0.5); /* lift effect */
+  }
+
+  /* Navigation links inside WordPress menu */
+  nav a {
+    @apply relative text-gray-800 font-medium transition-colors duration-300;
+  }
+
+  /* Underline effect using pseudo-element */
+  nav a::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-0.5 w-0 transition-all duration-300;
+    background-color: var(--color-primary); /* matches site primary color */
+  }
+
+  /* Hover state: text changes to primary + underline grows */
+  nav a:hover {
+    color: var(--color-primary);
+  }
+
+  nav a:hover::after {
+    @apply w-full;
   }
 }
