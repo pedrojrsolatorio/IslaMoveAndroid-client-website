@@ -7,15 +7,15 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('font-sans bg-gray-50 text-gray-800'); ?>>
+<body <?php body_class('font-sans text-gray-800'); ?>>
 
     <?php
     $site_name = get_theme_mod('site_name');
     $download_link = get_theme_mod('download_link');
     ?>
 
-    <header class="bg-white shadow">
-        <div class="container py-4 flex justify-between items-center">
+    <header class="bg-white/90 shadow sticky top-0 z-10 backdrop-blur-md">
+        <div class="wrapper py-4 flex justify-between items-center">
 
             <!-- Logo -->
             <div class="flex items-center gap-3">
