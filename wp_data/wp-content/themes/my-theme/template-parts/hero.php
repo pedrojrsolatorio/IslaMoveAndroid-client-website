@@ -5,7 +5,7 @@ $hero_button_link = get_field('hero_button_link');
 $hero_image = get_field('hero_image')
 ?>
 
-<section class="bg-white pt-28 min-h-screen">
+<section class="bg-white pt-20 md:pt-28 lg:pt-32 min-h-[calc(100vh-76px)]">
     <div class="wrapper grid md:grid-cols-2 gap-12 items-center">
 
         <!-- Left Content -->
