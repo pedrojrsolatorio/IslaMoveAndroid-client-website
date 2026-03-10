@@ -50,7 +50,7 @@
     @apply h-10 w-auto;
   }
   .btn-download {
-    @apply px-5 py-3 text-sm font-medium rounded-2xl transition duration-200 hover:-translate-y-1;
+    @apply px-4 py-2 text-xs font-medium rounded-2xl transition duration-200 hover:-translate-y-1;
     background-color: var(--color-primary);
     color: white;
     box-shadow: 0 4px 14px rgb(25 186 240 / 0.4);
@@ -58,6 +58,11 @@
   .btn-download:hover {
     background-color: #1496c1;
     box-shadow: 0 8px 20px rgb(25 186 240 / 0.5); /* lift effect */
+  }
+  @media (min-width: 640px) {
+    .btn-download {
+      @apply px-5 py-3 text-sm;
+    }
   }
 
   /* Navigation links inside WordPress menu */
