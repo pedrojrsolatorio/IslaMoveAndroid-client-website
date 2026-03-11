@@ -57,7 +57,7 @@ $hero_image = get_field('hero_image')
                     alt="<?php echo esc_attr($hero_image['alt']) ?>"
                     class="rounded-3xl shadow-xl">
             <?php endif ?>
-            <div class="absolute bottom-4 left-4 md:-bottom-6 md:-left-6 z-10 bg-white shadow-lg rounded-xl px-6 py-4 flex items-center gap-3">
+            <div class="absolute bottom-4 left-4 md:-bottom-6 md:-left-6 z-10 bg-white shadow-lg rounded-xl px-4 md:px-6 py-2 md:py-4 flex items-center gap-2 md:gap-3">
                 <div class="bg-green-100 p-2 rounded-full">
                     <img
                         src="<?php echo get_template_directory_uri() ?>/assets/icons/check_icon.png"
