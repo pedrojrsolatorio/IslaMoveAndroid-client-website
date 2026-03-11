@@ -461,6 +461,9 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
   .-space-x-3 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
