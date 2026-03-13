@@ -1,4 +1,4 @@
-<section class="py-20 bg-gray-100">
+<section class="py-20 wrapper bg-white">
     <div class="container">
         <h3 class="text-3xl font-bold text-center mb-12">For Drivers</h3>
 

@@ -1,15 +1,16 @@
-<section class="py-20 bg-white">
-    <div class="wrapper grid md:grid-cols-2 gap-16">
-        <div>
-            <div class="flex justify-center">
-                <div class="relative w-76 h-138 bg-black rounded-[40px] overflow-hidden">
-                    <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-black w-32 h-6 rounded-b-full"></div>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/howitworks.png" class="object-contain p-2 rounded-[40px]" alt="">
-                </div>
+<section class="py-20 wrapper bg-white">
+    <div class="grid md:grid-cols-2 gap-16">
+        <div class="flex justify-center relative">
+            <div class="relative w-76 h-138 bg-black rounded-[40px] overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-black w-32 h-6 rounded-b-full"></div>
+                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/howitworks.png" class="object-contain p-2 rounded-[40px]" alt="">
+            </div>
+            <div class="absolute top-1/3 right-0 -translate-y-12 translate-x-1/4  bg-primary rounded-3xl p-4">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/floating_icon.png" alt="">
             </div>
         </div>
 
-        <div class="flex flex-col gap-12">
+        <div class="flex flex-col gap-12 justify-center">
             <h2 class="text-4xl font-black text-secondary">Get moving in 3 steps</h2>
             <div class="flex flex-col gap-12">
                 <div class="flex gap-6">
