@@ -1,4 +1,4 @@
-<section class="py-20 wrapper bg-gray-100">
+<section class="py-20 wrapper">
     <div class="bg-slate-900 rounded-xl p-6 md:p-20 grid md:grid-cols-2 gap-12 items-center">
         <div class="flex flex-col gap-6">
             <h2 class="text-4xl font-black text-slate-300">A Verified Community</h2>

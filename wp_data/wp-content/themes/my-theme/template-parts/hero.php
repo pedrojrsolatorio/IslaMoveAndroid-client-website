@@ -32,7 +32,7 @@ $hero_image = get_field('hero_image')
                 <?php echo esc_html($hero_subtitle) ?>
             </p>
             <div class="flex mb-8">
-                <a href="<?php echo esc_url($hero_button_link) ?>" class="bg-black text-white rounded-full flex justify-center w-40 h-14 overflow-hidden px-6 py-2">
+                <a href="<?php echo esc_url($hero_button_link) ?>" class="bg-black text-white rounded-full flex justify-center w-40 h-14 overflow-hidden px-6 py-2 hover:-translate-y-1 transition duration-300 ease-in-out">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/itch_io.png" alt="itch.io" class="max-w-full max-h-full object-contain">
                 </a>
             </div>

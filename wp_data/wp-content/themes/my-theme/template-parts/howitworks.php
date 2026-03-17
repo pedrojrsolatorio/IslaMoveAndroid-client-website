@@ -1,5 +1,5 @@
-<section class="py-20 wrapper bg-white">
-    <div class="grid md:grid-cols-2 gap-16">
+<section class="bg-white">
+    <div class="py-20 wrapper grid md:grid-cols-2 gap-16">
         <div class="flex justify-center relative">
             <div class="relative w-76 h-138 bg-black rounded-[40px] overflow-hidden">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-black w-32 h-6 rounded-b-full"></div>
