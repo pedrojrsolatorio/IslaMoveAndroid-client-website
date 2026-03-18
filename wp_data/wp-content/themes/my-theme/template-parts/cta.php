@@ -2,7 +2,7 @@
 $hero_button_link = get_field('hero_button_link');
 ?>
 
-<section id="download" class="py-20 wrapper">
+<section id="download" class="py-20 wrapper flex justify-center">
     <div class="bg-primary text-white text-center flex flex-col items-center md:w-240 py-16 px-8 rounded-3xl">
         <h2 class="text-5xl font-black mb-6">Ready to move smarter?</h2>
         <p class="mb-6 text-lg">Download IslaMove today and experience reliable, fixed-fare rides.</p>
