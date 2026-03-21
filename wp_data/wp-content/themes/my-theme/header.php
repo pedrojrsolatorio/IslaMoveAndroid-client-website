@@ -8,6 +8,7 @@
 </head>
 
 <body <?php body_class('font-sans text-gray-800 bg-slate-50'); ?>>
+    <?php wp_body_open() ?>
 
     <?php
     $site_name = get_theme_mod('site_name');
