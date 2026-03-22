@@ -62,7 +62,7 @@
 
     <!-- Mobile Menu Modal Overlay -->
     <div id="mobile-menu"
-        class="fixed inset-0 z-50 flex flex-col hidden"
+        class="fixed inset-0 z-50 hidden"
         role="dialog"
         aria-modal="true">
         <!-- Backdrop -->
@@ -141,28 +141,30 @@
         const menuClose = document.getElementById('menu-close');
         const backdrop = document.getElementById('menu-backdrop');
 
-        function openMenu() {
-            mobileMenu.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-            requestAnimationFrame(() => {
-                menuPanel.style.transform = 'translateX(0)';
+        if (toggle && mobileMenu && menuPanel) {
+            function openMenu() {
+                mobileMenu.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                requestAnimationFrame(() => {
+                    menuPanel.style.transform = 'translateX(0)';
+                });
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeMenu() {
+                menuPanel.style.transform = 'translateX(100%)';
+                document.body.style.overflow = '';
+                toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+            }
+
+            toggle.addEventListener('click', openMenu);
+            if (menuClose) menuClose.addEventListener('click', closeMenu);
+            if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeMenu();
             });
-            toggle.setAttribute('aria-expanded', 'true');
         }
-
-        function closeMenu() {
-            menuPanel.style.transform = 'translateX(100%)';
-            document.body.style.overflow = '';
-            toggle.setAttribute('aria-expanded', 'false');
-            setTimeout(() => mobileMenu.classList.add('hidden'), 300);
-        }
-
-        toggle.addEventListener('click', openMenu);
-        menuClose.addEventListener('click', closeMenu);
-        backdrop.addEventListener('click', closeMenu);
-
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeMenu();
-        });
     </script>
