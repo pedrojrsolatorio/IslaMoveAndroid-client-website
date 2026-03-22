@@ -66,7 +66,7 @@
         role="dialog"
         aria-modal="true">
         <!-- Backdrop -->
-        <div id="menu-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div id="menu-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"></div>
 
         <!-- Modal Panel -->
         <div class="relative z-10 bg-white w-4/5 max-w-xs min-h-full ml-auto flex flex-col shadow-2xl
