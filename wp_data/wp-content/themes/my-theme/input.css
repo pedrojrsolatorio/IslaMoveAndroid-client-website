@@ -41,8 +41,13 @@
 }
 
 @layer base {
-  h1 {
+  /* commented h1 that is similar to default value */
+  /* h1 {
     @apply text-4xl font-bold;
+  } */
+  /* uncommented h1 is the value used from figma design */
+  h1 {
+    @apply text-6xl font-bold;
   }
 
   h2 {
