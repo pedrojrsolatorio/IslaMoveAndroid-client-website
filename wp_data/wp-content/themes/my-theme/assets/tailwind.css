@@ -329,6 +329,9 @@
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -359,9 +362,6 @@
   .hidden {
     display: none;
   }
-  .inline {
-    display: inline;
-  }
   .inline-block {
     display: inline-block;
   }
@@ -370,9 +370,6 @@
   }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\.5 {
     height: calc(var(--spacing) * 3.5);
@@ -397,6 +394,12 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+  .h-22 {
+    height: calc(var(--spacing) * 22);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
@@ -445,6 +448,12 @@
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-22 {
+    width: calc(var(--spacing) * 22);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
@@ -546,6 +555,9 @@
       margin-inline-end: calc(calc(var(--spacing) * -3) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .self-center {
+    align-self: center;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -594,6 +606,9 @@
   }
   .bg-\[\#19BAF0\]\/5 {
     background-color: color-mix(in oklab, #19BAF0 5%, transparent);
+  }
+  .bg-\[\#19BAF0\]\/10 {
+    background-color: color-mix(in oklab, #19BAF0 10%, transparent);
   }
   .bg-\[\#19BAF0\]\/20 {
     background-color: color-mix(in oklab, #19BAF0 20%, transparent);
@@ -685,6 +700,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -696,6 +714,9 @@
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -1072,6 +1093,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .md\:py-26 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 26);
+    }
+  }
   .md\:pt-26 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 26);
@@ -1081,6 +1107,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .lg\:py-32 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 32);
     }
   }
   .lg\:pt-32 {
