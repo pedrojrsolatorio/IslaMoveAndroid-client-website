@@ -28,7 +28,6 @@ get_header() ?>
             </div>
         </div>
     </section>
-
     <section class="bg-white py-24">
         <div class="wrapper gap-16 flex flex-col items-center">
             <div class="flex gap-4 flex-col items-center">
@@ -82,6 +81,68 @@ get_header() ?>
                 </div>
                 <h3 class="mb-4">Passenger Vetting</h3>
                 <p>It's not just for drivers. Every passenger must verify their identity, ensuring drivers feel safe with every booking.</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#19BAF0]/05 py-24">
+        <div class="wrapper grid md:grid-cols-2 gap-16">
+            <div class="flex flex-col gap-6">
+                <h2>Two-Way Accountability</h2>
+                <p>Trust is a two-way street. Our mutual rating system ensures that respectful behavior is the standard for everyone in the IslaMove community.</p>
+                <div class="flex gap-4">
+                    <div class="bg-white shadow-md rounded-full flex items-center justify-center w-10 h-10">
+                        <svg class="w-5 h-4.75 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.367 2.447a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.367-2.447a1 1 0 00-1.176 0l-3.367 2.447c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.075 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.274-3.957z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Transparent Feedback</h4>
+                        <p>Read reviews from previous trips to know exactly who you are moving with.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="bg-white shadow-md rounded-full flex items-center justify-center w-10 h-10">
+                        <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Transparent Feedback</h4>
+                        <p>Read reviews from previous trips to know exactly who you are moving with.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 flex gap-8">
+                <div class="pb-6 flex justify-between">
+                    <div class="flex items-center">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/avatar_pic.jpg" alt="rating avatar" class="rounded-full ml-4 h-12 w-12">
+                        <div class="flex flex-col">
+                            <p>Driver: Marc R.</p>
+                            <div>
+                                <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                                <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                                <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                                <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                                <svg class="w-5 h-4.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10A8 8 0 114.293 4.293A8 8 0 0118 10zm-8-4a1 1 0 00-1 1v4a1 1 0 002 0V7a1 1 0 00-1-1zm0 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="bg-green-300 text-black">VERIFIED</button>
+                </div>
+                <div>
+
+                </div>
+                <button>Submit Rating</button>
             </div>
         </div>
     </section>
