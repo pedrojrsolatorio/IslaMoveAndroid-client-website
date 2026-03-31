@@ -5,7 +5,7 @@ Template Name: Safety
 get_header() ?>
 
 <main>
-    <section class="bg-slate-50 py-20">
+    <section class="bg-white py-20">
         <div class="gap-6 wrapper flex flex-col items-center">
             <div class="bg-blue-100 flex items-center gap-2 px-4 py-2 rounded-full">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/icons/safety.png" alt="safety icon" class="w-3 h-3.5">
@@ -28,30 +28,48 @@ get_header() ?>
             </div>
         </div>
     </section>
-    <section class="bg-white py-24">
+    <section class="bg-white pb-24">
         <div class="wrapper gap-16 flex flex-col items-center">
             <div class="flex gap-4 flex-col items-center">
                 <h2>The Vefication Process</h2>
                 <p>Strict document review for all members, completed in 24-48 hours.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="flex flex-col items-center">
+            <div class="grid md:grid-cols-3 gap-12 md:gap-8 relative w-full">
+                <!-- <div class="absolute hidden md:block bg-[#E2E8F0] h-0.5 z-1"
+                    style="top: 44px; left: calc(16.666% + 52px); right: calc(16.666% + 52px);">
+                </div> -->
+
+                <!-- Line segment: circle 1 → circle 2 -->
+                <div class="absolute hidden md:block bg-[#E2E8F0] h-0.5 z-0"
+                    style="top: 44px; left: calc(16.666% + 52px); right: calc(50% + 52px);">
+                </div>
+
+                <!-- Line segment: circle 2 → circle 3 -->
+                <div class="absolute hidden md:block bg-[#E2E8F0] h-0.5 z-0"
+                    style="top: 44px; left: calc(50% + 52px); right: calc(16.666% + 52px);">
+                </div>
+
+                <div class="absolute md:hidden left-1/2 -translate-x-1/2 z-0"
+                    style="top: 88px; bottom: 88px; width: 2px;
+                        background: repeating-linear-gradient(to bottom, #E2E8F0 0px, #E2E8F0 8px, transparent 8px, transparent 16px);">
+                </div>
+                <div class="flex flex-col items-center z-10">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/icons/download.png" alt="download icon" class="self-center">
                     </div>
                     <h3 class="p-2">1. Documnent Submission</h3>
                     <p class="text-center">Upload Government ID, Driver's License, and current Vehicle Registration for review.</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center z-2">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/download.png" alt="download icon" class="self-center">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/sheild.png" alt="download icon" class="self-center">
                     </div>
                     <h3 class="p-2">2. Manual Admin Review</h3>
                     <p class="text-center">Upload Government ID, Our dedicated safety team manually inspects every document within 24-48 hours.</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center z-2">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/download.png" alt="download icon" class="self-center">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/check-icon-dark.png" alt="download icon" class="self-center">
                     </div>
                     <h3 class="p-2">3. Verified Status</h3>
                     <p class="text-center">Once approved, you receieve a 'Verified' badge, signaling trust to the community.</p>
@@ -70,17 +88,17 @@ get_header() ?>
             </div>
             <div class="lift-card">
                 <div class="rounded-2xl bg-[#19BAF0]/10 flex items-center justify-center w-12 h-12 mb-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/search.png" alt="search icon">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/car.png" alt="search icon">
                 </div>
-                <h3 class="mb-4">Passenger Vetting</h3>
-                <p>It's not just for drivers. Every passenger must verify their identity, ensuring drivers feel safe with every booking.</p>
+                <h3 class="mb-4">Vehicle Standards</h3>
+                <p>We require periodic vehicle health checks and photo verification to ensure comfort and mechanical reliability.</p>
             </div>
             <div class="lift-card">
                 <div class="rounded-2xl bg-[#19BAF0]/10 flex items-center justify-center w-12 h-12 mb-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/search.png" alt="search icon">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.png" alt="search icon">
                 </div>
-                <h3 class="mb-4">Passenger Vetting</h3>
-                <p>It's not just for drivers. Every passenger must verify their identity, ensuring drivers feel safe with every booking.</p>
+                <h3 class="mb-4">Mutual Accountability</h3>
+                <p>Both parties rate each other after every trip. High ratings are rewarded, while low ratings trigger quality reviews.</p>
             </div>
         </div>
     </section>
@@ -160,7 +178,7 @@ get_header() ?>
                     </div>
                     <p class="text-sm text-[#94A3B8]">"Professional driver, very clean car!"</p>
                 </div>
-                <button class="bg-secondary rounded-3xl py-3 text-white cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl active:translate-y-0 active:shadow-md">Submit Rating</button>
+                <button class="bg-secondary rounded-3xl py-3 text-white">Submit Rating</button>
             </div>
         </div>
     </section>
@@ -189,13 +207,13 @@ get_header() ?>
     </section>
 
     <section class="bg-slate-900">
-        <div class="wrapper py-12 flex justify-between">
+        <div class="wrapper py-12 flex flex-col md:flex-row md:justify-between gap-6 items-center">
             <div class="flex flex-col justify-center">
                 <h2 class="mb-2 text-white text-2xl font-bold">Need assistance or clarifications?</h2>
                 <p class="text-white">Our safety response team is always ready to help.</p>
             </div>
             <div class="flex gap-4">
-                <div class="bg-white px-6 py-3.25 rounded-3xl flex gap-2 items-center">
+                <div class="bg-white px-6 py-3.25 rounded-3xl flex gap-2 items-center cursor-pointer transition-all duration-300 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-xl active:translate-y-0 active:shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -208,8 +226,14 @@ get_header() ?>
                     </svg>
                     <span>Contact Support</span>
                 </div>
-                <div class="rounded-3xl border-2 border-white text-white py-3 px-6 flex items-center">
-                    <p>Live Chat</p>
+                <div class="rounded-3xl border-2 border-white text-white py-3 px-6 flex gap-2 items-center cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:text-primary hover:-translate-y-1 hover:shadow-xl active:translate-y-0 active:shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.02 2 11c0 2.84 1.51 5.38 3.87 7.05V22l3.55-1.94c.81.22 1.68.34 2.58.34 5.52 0 10-4.02 10-9s-4.48-9-10-9zm1.06 12.15l-2.55-2.72-4.47 2.72 5.02-5.32 2.61 2.72 4.41-2.72-5.02 5.32z" />
+                    </svg>
+                    <p>Facebook</p>
                 </div>
             </div>
         </div>
