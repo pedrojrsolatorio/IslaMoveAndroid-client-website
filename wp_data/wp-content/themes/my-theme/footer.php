@@ -1,6 +1,6 @@
 <footer class="bg-white pt-16 pb-8">
     <div class="wrapper text-center flex flex-col gap-16">
-        <div class="grid md:grid-cols-4 gap-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
             <div class="flex flex-col gap-[22.8px]">
                 <div class="flex items-center gap-2">
                     <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center overflow-hidden p-1.5">
