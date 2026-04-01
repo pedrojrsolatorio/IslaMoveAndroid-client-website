@@ -1180,16 +1180,6 @@
       left: calc(var(--spacing) * -6);
     }
   }
-  .md\:col-span-1 {
-    @media (width >= 48rem) {
-      grid-column: span 1 / span 1;
-    }
-  }
-  .md\:col-span-3 {
-    @media (width >= 48rem) {
-      grid-column: span 3 / span 3;
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -1223,11 +1213,6 @@
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-\[1fr_3fr\] {
-    @media (width >= 48rem) {
-      grid-template-columns: 1fr 3fr;
     }
   }
   .md\:flex-row {
