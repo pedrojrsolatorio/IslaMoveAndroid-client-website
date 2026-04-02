@@ -41,6 +41,7 @@
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-500: oklch(55.4% 0.046 257.417);
@@ -530,6 +531,30 @@
     --tw-translate-y: calc(var(--spacing) * -12);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-rotate-12 {
+    rotate: calc(12deg * -1);
+  }
+  .rotate-2 {
+    rotate: 2deg;
+  }
+  .rotate-4 {
+    rotate: 4deg;
+  }
+  .rotate-6 {
+    rotate: 6deg;
+  }
+  .rotate-8 {
+    rotate: 8deg;
+  }
+  .rotate-12 {
+    rotate: 12deg;
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .rotate-\[6deg\] {
+    rotate: 6deg;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
@@ -622,6 +647,10 @@
     border-bottom-right-radius: calc(infinity * 1px);
     border-bottom-left-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -634,11 +663,20 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-\[\#E2E8F0\] {
+    border-color: #E2E8F0;
+  }
+  .border-\[\#b8bcc2\] {
+    border-color: #b8bcc2;
+  }
   .border-gray-100 {
     border-color: var(--color-gray-100);
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-slate-200 {
+    border-color: var(--color-slate-200);
   }
   .border-white {
     border-color: var(--color-white);
@@ -714,6 +752,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -875,11 +916,20 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .text-\[\#0F172A\] {
+    color: #0F172A;
+  }
   .text-\[\#94A3B8\] {
     color: #94A3B8;
   }
+  .text-\[\#64748B\] {
+    color: #64748B;
+  }
   .text-\[\#E2E8F0\] {
     color: #E2E8F0;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -919,6 +969,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .capitalize {
+    text-transform: capitalize;
   }
   .uppercase {
     text-transform: uppercase;
