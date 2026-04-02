@@ -15,7 +15,7 @@ $hero_image = get_field('hero_image')
             </span>
             <h1 class="text-6xl font-black leading-tight mb-6">
                 <?php echo wp_kses_post($hero_title); ?>
-                <!-- If for client who don't know how to use span in ACF field then used this code below and have separate ACF fields: -->
+                <!-- If for client who don't know how to use span in ACF field then use this code below and have separate ACF fields: -->
                 <!-- <?php if ($hero_title_plain): ?>
                     <?php echo esc_html($hero_title_plain); ?>
                 <?php endif; ?>

@@ -12,13 +12,16 @@ $discount_image = get_field('discount_image')
 ?>
 
 <main>
-    <section class="wrapper bg-slate-50 pt-20 md:pt-26 lg:pt-32 min-h-[calc(100vh-76px)]">
+    <section class="wrapper bg-slate-50 pt-20 md:pt-24 pb-20">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <!-- Left Content -->
             <div class="gap-6">
-                <span class="inline-block bg-blue-100 text-primary text-sm px-4 py-2 rounded-full mb-6">
-                    Verified Savings
-                </span>
+                <div class="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-6">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/check_icon_blue.png" alt="Check Icon">
+                    <span class="inline-block text-primary text-sm font-bold">
+                        Verified Savings
+                    </span>
+                </div>
                 <h1 class="text-6xl font-black leading-tight mb-6">
                     <!-- Unlike the hero of Homepage, if for client who don't know how to use span in ACF field then use this code below and have separate ACF fields: -->
                     <?php if ($discount_title_plain): ?>
@@ -54,14 +57,48 @@ $discount_image = get_field('discount_image')
                     <div class="bg-green-100 p-2 rounded-full">
                         <img
                             src="<?php echo get_template_directory_uri() ?>/assets/icons/check-icon-green.png"
-                            alt="Check Icon"
-                            class="w-5 h-5 object-contain">
+                            alt="Check Icon">
                     </div>
                     <div>
                         <p class="text-[#64748B] font-bold text-xs capitalize">Latest Verification</p>
                         <p class="text-sm text-[#0F172A] font-bold">Student ID Approved</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper pt-8 pb-16 flex flex-col items-center">
+        <div class="mb-12">
+            <h2 class="mb-4">Our Discount Programs</h2>
+            <p class="text-[#475569]">Tailord support for our community's essential travelers.</p>
+        </div>
+        <div class="grid md:grid-cols-2 px-8 gap-8">
+            <div class="lift-card">
+                <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-3xl mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13L5.74 12.74 12 9.5l6.26 3.24L12 16zm-7 2v2c0 1.66 3.58 3 7 3s7-1.34 7-3v-2l-7 4-7-4z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Student Discount
+                </h3>
+                <p class="text-gray-500 leading-relaxed">
+                    Currently enrolled students in the municipality receive and automatic 20% reduction on all standard fares. Valid for all routes.
+                </p>
+            </div>
+            <div class="lift-card">
+                <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-xl mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M14 7a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-1 4h-2a4 4 0 0 0-4 4v3h2v-3a2 2 0 0 1 2-2h2v8h2v-5h1l2 5h2l-2.5-6.5A3 3 0 0 0 14 11z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Senior Citizen Discount
+                </h3>
+                <p class="text-gray-500 leading-relaxed">
+                    Municipal residents aged 60 and above are eligible for a permanent 20% discount. No manual entry needed &mdash;applied atomatically at checkout once verified.
+                </p>
             </div>
         </div>
     </section>
