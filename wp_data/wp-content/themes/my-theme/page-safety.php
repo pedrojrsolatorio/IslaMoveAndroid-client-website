@@ -32,7 +32,7 @@ get_header() ?>
         <div class="wrapper gap-16 flex flex-col items-center">
             <div class="flex gap-4 flex-col items-center">
                 <h2>The Vefication Process</h2>
-                <p>Strict document review for all members, completed in 24-48 hours.</p>
+                <p class="text-slate-600">Strict document review for all members, completed in 24-48 hours.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-12 md:gap-8 relative w-full">
                 <!-- <div class="absolute hidden md:block bg-[#E2E8F0] h-0.5 z-1"
@@ -53,26 +53,26 @@ get_header() ?>
                     style="top: 88px; bottom: 88px; width: 2px;
                         background: repeating-linear-gradient(to bottom, #E2E8F0 0px, #E2E8F0 8px, transparent 8px, transparent 16px);">
                 </div>
-                <div class="flex flex-col items-center z-10">
+                <div class="flex flex-col items-center text-center z-10">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/icons/download.png" alt="download icon" class="self-center">
                     </div>
-                    <h3 class="p-2">1. Documnent Submission</h3>
-                    <p class="text-center">Upload Government ID, Driver's License, and current Vehicle Registration for review.</p>
+                    <h3 class="p-2 text-center">1. Documnent Submission</h3>
+                    <p>Upload Government ID, Driver's License, and current Vehicle Registration for review.</p>
                 </div>
-                <div class="flex flex-col items-center z-2">
+                <div class="flex flex-col items-center text-center z-2">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/icons/sheild.png" alt="download icon" class="self-center">
                     </div>
-                    <h3 class="p-2">2. Manual Admin Review</h3>
-                    <p class="text-center">Upload Government ID, Our dedicated safety team manually inspects every document within 24-48 hours.</p>
+                    <h3 class="p-2 text-center">2. Manual Admin Review</h3>
+                    <p>Upload Government ID, Our dedicated safety team manually inspects every document within 24-48 hours.</p>
                 </div>
-                <div class="flex flex-col items-center z-2">
+                <div class="flex flex-col items-center text-center z-2">
                     <div class="mb-6 bg-primary rounded-full w-22 h-22 flex justify-center">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/icons/check-icon-dark.png" alt="download icon" class="self-center">
                     </div>
-                    <h3 class="p-2">3. Verified Status</h3>
-                    <p class="text-center">Once approved, you receieve a 'Verified' badge, signaling trust to the community.</p>
+                    <h3 class="p-2 text-center">3. Verified Status</h3>
+                    <p>Once approved, you receieve a 'Verified' badge, signaling trust to the community.</p>
                 </div>
             </div>
         </div>
