@@ -25,8 +25,8 @@
                     <img src="<?php echo get_template_directory_uri() ?>/assets/icons/grad_cap.png" alt="graduation cap">
                 </div>
                 <div class="flex flex-col gap-2">
-                    <h1 class="text-2xl font-bold">Student Advantage</h1>
-                    <p class="text-slate-600">Get 20% off all municipal rides. Simply upload your valid student ID for a 24-hour verification check.</p>
+                    <h1 class="text-2xl font-bold">Senior Benefits</h1>
+                    <p class="text-slate-600">Senior aged 60+ also enjoy 20% discount on all shared routes across San Jose Municipality.</p>
                     <div class="pt-4 gap-4">
                         <a href="" class="text-secondary hover:font-bold group inline-flex items-center gap-1 transition-colors">
                             Learn more
