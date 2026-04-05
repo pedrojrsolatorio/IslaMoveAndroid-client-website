@@ -5,30 +5,45 @@ Template Name: Safety
 get_header() ?>
 
 <main>
-    <section class="bg-white py-20">
-        <div class="gap-6 wrapper flex flex-col items-center">
-            <div class="bg-blue-100 flex items-center gap-2 px-4 py-2 rounded-full">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/safety.png" alt="safety icon" class="w-3 h-3.5">
-                <span class="text-primary text-sm">
-                    YOUR SAFETY IS OUR PRIORITY
-                </span>
-            </div>
-            <h1 class="text-6xl font-black leading-tight mb-6 text-center">
-                <?php echo wp_kses_post($hero_title); ?>
-                Building a <span class="text-primary">Trusted</span> Community
-            </h1>
-            <p class="text-gray-600 text-xl mb-8 max-w-lg text-center">
-                IslaMove is more than just a ride. We've built a rigorous verification system to ensure every driver and passenger is vetted for your peace of mind.
-            </p>
-            <div class="flex mb-8">
-                <a href="<?php echo esc_url($hero_button_link) ?>" class="bg-primary rounded-full flex justify-center items-center h-14 gap-2 overflow-hidden px-6 py-2 hover:-translate-y-1 transition duration-300 ease-in-out">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/warning.png" alt="warning" class="w-4">
-                    Report a Concern
-                </a>
+    <section class="bg-white flex items-center min-h-[calc(100vh-76px)]">
+        <div class="wrapper w-full">
+            <div class="bg-slate-900 rounded-3xl my-20 md:my-0 p-24 gap-6 flex flex-col items-center">
+                <div class="bg-blue-100 flex items-center gap-2 px-4 py-2 rounded-full">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/safety.png" alt="safety icon" class="w-3 h-3.5">
+                    <span class="text-primary text-sm">
+                        YOUR SAFETY IS OUR PRIORITY
+                    </span>
+                </div>
+                <h1 class="text-6xl font-black leading-tight mb-6 text-center text-white">
+                    <?php echo wp_kses_post($hero_title); ?>
+                    Building a <span class="text-primary">Trusted</span> Community
+                </h1>
+                <div class="flex flex-col md:flex-row justify-evenly w-full">
+                    <div>
+                        <p class="text-gray-600 text-xl mb-8 max-w-lg">
+                            IslaMove is more than just a ride. We've built a rigorous verification system to ensure every driver and passenger is vetted for your peace of mind.
+                        </p>
+                        <div class="flex mb-8">
+                            <a href="<?php echo esc_url($hero_button_link) ?>" class="bg-primary rounded-full flex justify-center items-center h-14 gap-2 overflow-hidden px-6 py-2 hover:-translate-y-1 transition duration-300 ease-in-out hover:bg-white hover:text-[#0f172b]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/warning.png" alt="warning" class="w-4">
+                                Report a Concern
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="bg-[#19BAF0]/20 rounded-full h-64 w-64 flex justify-center items-center">
+                            <div class="bg-[#19BAF0]/40 rounded-full h-48 w-48 flex justify-center items-center">
+                                <div class="bg-[#19BAF0] rounded-full h-32 w-32 flex items-center justify-center">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/icons/check-icon-white.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="bg-white pb-24">
+    <section class="bg-white pt-20 pb-24">
         <div class="wrapper gap-16 flex flex-col items-center">
             <div class="flex gap-4 flex-col items-center">
                 <h2>The Vefication Process</h2>
